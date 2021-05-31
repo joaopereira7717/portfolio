@@ -1,0 +1,18 @@
+-Home (será uma págino tipo CV)
+-Calculadora
+
+-Experiments (não deve estar listado no Routing)
+
+-evAndRef um componente que mostra a utilização de eventos e referências.
+
+-Cookies
+
+-A clinica veterinária com os seus componentes
+
+-Services: criar uma lista de compras - usar dois componentes um para adiciona e outro componente marca como "comprado", deve criar uma class Compra com nome, valor, e um bollean que indica de foi comprado ou não. Deve haver um terceiro so chamado compras que e usar childRoutes para navegar. 
+
+-Restfull API: Ser possível ir buscar uma piada do chuck norris, ser possível pesquisar uma piada. 
+
+-Cor Por parâmetro - um filho recebe cor por parametro;
+
+_Criar pagina 404, animar, ligar ao routing
