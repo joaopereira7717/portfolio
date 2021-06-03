@@ -5,6 +5,8 @@ import { ChuckJokesComponent } from './components/chuck-jokes/chuck-jokes.compon
 import { CorParamComponent } from './components/cor-param/cor-param.component';
 import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
 import { HomeComponent } from './components/home/home.component';
+import { AddComponent } from './components/lista-compras/add/add.component';
+import { BuyComponent } from './components/lista-compras/buy/buy.component';
 import { ListaComprasComponent } from './components/lista-compras/lista-compras.component';
 
 const routes: Routes = [
@@ -14,7 +16,14 @@ const routes: Routes = [
   {path: "evAndRef", component: EvAndRefComponent},
   {path: "corParam", component: CorParamComponent},
   {path: "chuckJoke", component: ChuckJokesComponent},
-  {path: "listaCompras", component:ListaComprasComponent}
+  {
+    path: 'listaCompras',
+    component: ListaComprasComponent,
+    children: [
+      { path: 'add', component: AddComponent },
+      { path: 'buy', component: BuyComponent },
+    ],
+  },
 
 ];
 

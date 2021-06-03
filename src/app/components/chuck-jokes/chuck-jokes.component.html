@@ -1,3 +1,14 @@
 <app-navbar></app-navbar>
 
-<p>chuck-jokes works!</p>
+<h1>{{piada}}</h1>
+
+<button class="btn btn-primary" (click)="getJoke()">Get Joke</button>
+
+<button class="btn btn-primary" (click)="getMorePiadas(valor.value)">Search Jokes</button>
+
+<input type="text" #valor>
+
+<div *ngFor="let item of piadas.result">
+  <p>{{item.value}}</p>
+</div>
+

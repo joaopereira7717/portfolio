@@ -11,6 +11,9 @@ import { ChuckJokesComponent } from './components/chuck-jokes/chuck-jokes.compon
 import { ListaComprasComponent } from './components/lista-compras/lista-compras.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BuyComponent } from './components/lista-compras/buy/buy.component';
+import { AddComponent } from './components/lista-compras/add/add.component';
 
 
 @NgModule({
@@ -23,12 +26,15 @@ import { FormsModule } from '@angular/forms';
     CorParamComponent,
     ChuckJokesComponent,
     ListaComprasComponent,
+    BuyComponent,
+    AddComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
