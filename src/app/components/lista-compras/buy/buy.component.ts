@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Artigo } from 'src/app/classes/artigo';
 import { ListaServiceService } from 'src/app/services/lista-service.service';
 
@@ -15,6 +19,11 @@ export class BuyComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  faTwitter = faTwitter;
+  faFacebook = faFacebook;
+  faInstagram = faInstagram;
+  faGitHub = faGithub;
 
   precoTotal: number = 0;
 

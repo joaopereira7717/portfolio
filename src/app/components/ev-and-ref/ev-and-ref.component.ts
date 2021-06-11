@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-ev-and-ref',
@@ -11,6 +15,11 @@ export class EvAndRefComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  faTwitter = faTwitter;
+  faFacebook = faFacebook;
+  faInstagram = faInstagram;
+  faGitHub = faGithub;
 
   tamanhoLetra : number = 15
   cor:string="white";

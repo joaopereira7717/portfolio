@@ -1,7 +1,7 @@
 <div class="container">
-  <input type="text" #nome />
-  <input type="number" #preco />
-  <button (click)="adicionarLista(nome.value, preco.value)" class="ng-5">
+  <input class="form-control" type="text" #nome />
+  <input class="form-control" type="number" #preco />
+  <button (click)="adicionarLista(nome.value, preco.value)" class="btn btn-primary ng-5">
     Adicionar
   </button>
   
@@ -9,4 +9,5 @@
     <p>{{ artigo.nome }}, {{ artigo.preco }} €</p>
   </div>
 </div>
+
 

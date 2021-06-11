@@ -1,10 +1,8 @@
-<p>buy works</p>
-
 <div *ngFor="let artigo of listaService.listaCompras">
-  <p class="n-5 d-inline" [ngClass]="{ comprados: artigo.carrinho == true }">
+  <p class="n-5 d-inline p-2" [ngClass]="{ comprados: artigo.carrinho == true }">
     {{ artigo.nome }}, {{ artigo.preco }}€
   </p>
-  <button (click)="comprar(artigo)">Comprar</button>
+  <button class="btn btn-success" (click)="comprar(artigo)">Comprar</button>
 </div>
 
 <p>Preco total: {{ precoTotal }}</p>

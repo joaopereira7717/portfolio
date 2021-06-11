@@ -1,8 +1,56 @@
 <app-navbar></app-navbar>
 
-<input #referBtn type="text" [style.background]="cor" (mouseenter)='changeColor("red")' (focus)='changeColor("pink")' (input)='changeColor("green")' (blur)='changeColor("grey")' (copy)='changeColor("yellow")'>
-<br>
-<button (click)="trocarTamanhoLetra(referBtn.style)">Aumentar letra</button>
-<button (click)="trocarCorLetra(referBtn.style)">Trocar cor da letra</button>
-<button (click)="trocarFundo(referBtn.style)">Trocar Fundo</button>
-
+<div class="container">
+    <div class="row">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-lg-11 col-sm-10 textUp">
+      <!-- TITULOS INICIAIS -->
+      <div class="row mt-5 textoCentro">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <label>EV & REF</label>
+        </div>
+        <div class="col-sm-0 col-md-5 col-lg-6">             
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 text-right textoCentro">
+          <label>
+            <a class="pl-2 text-dark"><fa-icon [icon]="faTwitter"></fa-icon></a>
+            <a class="pl-2 text-dark"><fa-icon [icon]="faFacebook"></fa-icon></a>
+            <a class="pl-2 text-dark"><fa-icon [icon]="faInstagram"></fa-icon></a>
+            <a class="pl-2 text-dark"><fa-icon [icon]="faGitHub"></fa-icon></a>
+          </label>
+        </div>
+      </div>
+      <!-- FIM DOS TITULOS -->
+      <!-- INICIO DO CONTENT BRANCO-->
+      <div class="row bg-white pt-5 shadow-lg rounded p-5">
+        <input class="form-control" #referBtn type="text" [style.background]="cor" (mouseenter)='changeColor("red")' (focus)='changeColor("pink")' (input)='changeColor("green")' (blur)='changeColor("grey")' (copy)='changeColor("yellow")'>
+        <div class="pt-3">
+            <button class="btn btn-primary m-2" (click)="trocarTamanhoLetra(referBtn.style)">Aumentar letra</button>
+            <button class="btn btn-primary m-2" (click)="trocarCorLetra(referBtn.style)">Trocar cor da letra</button>
+            <button class="btn btn-primary m-2" (click)="trocarFundo(referBtn.style)">Trocar Fundo</button>
+        </div>
+      <!--FIM DO CONTENT BRANCO-->
+    </div>
+    <div class="col-sm-1 col-lg">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-lg-11 col-sm-10 mt-5 text-center">
+      <p>João Pereira</p>
+      <p>
+        <a class="pl-2 text-dark"><fa-icon [icon]="faTwitter"></fa-icon></a>
+        <a class="pl-2 text-dark"><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a class="pl-2 text-dark"><fa-icon [icon]="faInstagram"></fa-icon></a>
+        <a class="pl-2 text-dark"><fa-icon [icon]="faGitHub"></fa-icon></a>
+      </p>
+      <p>© Right Resume. All rights reserved.</p>
+    </div>
+    <div class="col-sm-1 col-lg">
+    </div>
+  </div>
+</div>
