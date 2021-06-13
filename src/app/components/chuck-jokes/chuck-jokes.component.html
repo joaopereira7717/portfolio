@@ -5,57 +5,73 @@
     <div class="col-sm-1">
     </div>
     <div class="col-lg-11 col-sm-10 textUp">
-    <!-- TITULOS INICIAIS -->
-    <div class="row mt-5 textoCentro">
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <label>Chuck Jokes</label>
+      <!-- TITULOS INICIAIS -->
+      <div class="row mt-5 textoCentro">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <label>Chuck Jokes</label>
+        </div>
+        <div class="col-sm-0 col-md-5 col-lg-6">
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 text-right textoCentro">
+          <label>
+            <a class="pl-2 text-dark">
+              <fa-icon [icon]="faTwitter"></fa-icon>
+            </a>
+            <a class="pl-2 text-dark">
+              <fa-icon [icon]="faFacebook"></fa-icon>
+            </a>
+            <a class="pl-2 text-dark">
+              <fa-icon [icon]="faInstagram"></fa-icon>
+            </a>
+            <a class="pl-2 text-dark">
+              <fa-icon [icon]="faGitHub"></fa-icon>
+            </a>
+          </label>
+        </div>
       </div>
-      <div class="col-sm-0 col-md-5 col-lg-6">             
+      <!-- FIM DOS TITULOS -->
+      <!-- INICIO DO CONTENT BRANCO-->
+      <div class="row bg-white pt-5 shadow-lg rounded p-5">
+        <textarea class="form-control" disabled>{{piada}}</textarea>
+        <div class="mt-4">
+          <button class="btn btn-primary m-2" (click)="getJoke()">Get Joke</button> <br>
+          <div class="d-inline-flex">
+            <input class="form-control" type="text" #valor>
+          </div>
+          <button class="btn btn-primary m-2" (click)="getMorePiadas(valor.value)">Search Jokes</button>
+          <div *ngFor="let item of piadas.result">
+            <p>{{item.value}}</p>
+          </div>
+        </div>
+        <!--FIM DO CONTENT BRANCO-->
       </div>
-      <div class="col-sm-12 col-md-3 col-lg-3 text-right textoCentro">
-        <label>
-          <a class="pl-2 text-dark"><fa-icon [icon]="faTwitter"></fa-icon></a>
-          <a class="pl-2 text-dark"><fa-icon [icon]="faFacebook"></fa-icon></a>
-          <a class="pl-2 text-dark"><fa-icon [icon]="faInstagram"></fa-icon></a>
-          <a class="pl-2 text-dark"><fa-icon [icon]="faGitHub"></fa-icon></a>
-        </label>
+      <div class="col-sm-1 col-lg">
       </div>
     </div>
-    <!-- FIM DOS TITULOS -->
-    <!-- INICIO DO CONTENT BRANCO-->
-    <div class="row bg-white pt-5 shadow-lg rounded p-5">
-      <textarea class="form-control" disabled>{{piada}}</textarea>
-      <div class="mt-4">
-        <button class="btn btn-primary m-2" (click)="getJoke()">Get Joke</button> <br>
-        <div class="d-inline-flex">
-          <input class="form-control" type="text" #valor>
-        </div>
-        <button class="btn btn-primary m-2" (click)="getMorePiadas(valor.value)">Search Jokes</button>
-        <div *ngFor="let item of piadas.result">
-          <p>{{item.value}}</p>
-        </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1">
       </div>
-    <!--FIM DO CONTENT BRANCO-->
+      <div class="col-lg-11 col-sm-10 mt-5 text-center">
+        <p>João Pereira</p>
+        <p>
+          <a class="pl-2 text-dark">
+            <fa-icon [icon]="faTwitter"></fa-icon>
+          </a>
+          <a class="pl-2 text-dark">
+            <fa-icon [icon]="faFacebook"></fa-icon>
+          </a>
+          <a class="pl-2 text-dark">
+            <fa-icon [icon]="faInstagram"></fa-icon>
+          </a>
+          <a class="pl-2 text-dark">
+            <fa-icon [icon]="faGitHub"></fa-icon>
+          </a>
+        </p>
+        <p>© Right Resume. All rights reserved.</p>
+      </div>
+      <div class="col-sm-1 col-lg">
+      </div>
+    </div>
   </div>
-  <div class="col-sm-1 col-lg">
-  </div>
-</div>
-</div>
-<div class="container">
-<div class="row">
-  <div class="col-sm-1">
-  </div>
-  <div class="col-lg-11 col-sm-10 mt-5 text-center">
-    <p>João Pereira</p>
-    <p>
-      <a class="pl-2 text-dark"><fa-icon [icon]="faTwitter"></fa-icon></a>
-      <a class="pl-2 text-dark"><fa-icon [icon]="faFacebook"></fa-icon></a>
-      <a class="pl-2 text-dark"><fa-icon [icon]="faInstagram"></fa-icon></a>
-      <a class="pl-2 text-dark"><fa-icon [icon]="faGitHub"></fa-icon></a>
-    </p>
-    <p>© Right Resume. All rights reserved.</p>
-  </div>
-  <div class="col-sm-1 col-lg">
-  </div>
-</div>
-</div>

@@ -1,0 +1,13 @@
+<div class="espacamento alinhamento">
+<h4>{{piada}}</h4>
+    <!--<h2>{{this.resultado.value}}</h2>-->
+    <div class ="bloco pesquisa">
+    <button class="btn" (click)="getJoke()">Piada aleatoria</button>
+    <button class="btn" (click)="getMoreJokes(valor.value)">Pesquisar piada</button>
+    <input type="text" placeholder="Pesquisar Piada..." #valor>
+
+    <div *ngFor="let item of piadas.result">
+        <div class="PiadaPesquisa">{{item.value}}</div>
+    </div>
+</div>
+</div>

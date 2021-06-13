@@ -4,18 +4,19 @@ import { CalculadoraComponent } from './components/calculadora/calculadora.compo
 import { ChuckJokesComponent } from './components/chuck-jokes/chuck-jokes.component';
 import { CorParamComponent } from './components/cor-param/cor-param.component';
 import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
+import { FourofourComponent } from './components/fourofour/fourofour.component';
 import { HomeComponent } from './components/home/home.component';
 import { AddComponent } from './components/lista-compras/add/add.component';
 import { BuyComponent } from './components/lista-compras/buy/buy.component';
 import { ListaComprasComponent } from './components/lista-compras/lista-compras.component';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "home", component: HomeComponent},
-  {path: "calculadora", component: CalculadoraComponent},
-  {path: "evAndRef", component: EvAndRefComponent},
-  {path: "corParam", component: CorParamComponent},
-  {path: "chuckJoke", component: ChuckJokesComponent},
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'calculadora', component: CalculadoraComponent },
+  { path: 'evAndRef', component: EvAndRefComponent },
+  { path: 'corParam', component: CorParamComponent },
+  { path: 'chuckJoke', component: ChuckJokesComponent },
   {
     path: 'listaCompras',
     component: ListaComprasComponent,
@@ -24,11 +25,11 @@ const routes: Routes = [
       { path: 'buy', component: BuyComponent },
     ],
   },
-
+  { path: '**', component: FourofourComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

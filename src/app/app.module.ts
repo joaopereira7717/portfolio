@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BuyComponent } from './components/lista-compras/buy/buy.component';
 import { AddComponent } from './components/lista-compras/add/add.component';
+import { FourofourComponent } from './components/fourofour/fourofour.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { AddComponent } from './components/lista-compras/add/add.component';
     ListaComprasComponent,
     BuyComponent,
     AddComponent,
+    FourofourComponent,
   ],
   imports: [
     BrowserModule,
